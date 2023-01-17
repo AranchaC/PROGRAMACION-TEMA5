@@ -8,6 +8,11 @@ public class Bicicleta extends Vehículo {
 	private static final int PLATODEFECTO = 1;
 	private static final int PIÑONDEFECTO = 1;
 
+	public Bicicleta( int velocidadActual, int platoActual, int piñonActual) {
+		super(velocidadActual);
+		this.platoActual = platoActual;
+		this.piñonActual = piñonActual;
+	}
 	public int getPlatoActual() {
 		return platoActual;
 	}
@@ -49,12 +54,6 @@ public class Bicicleta extends Vehículo {
 	public int frenar() {
 		return velocidadActual/=2;
 	}	
-
-	public Bicicleta( int velocidadActual, int platoActual, int piñonActual) {
-		super(velocidadActual);
-		this.platoActual = platoActual;
-		this.piñonActual = piñonActual;
-	}
 	 
 	public Bicicleta() {//constructor sin parámetros, con valores iniciales.
 		super();

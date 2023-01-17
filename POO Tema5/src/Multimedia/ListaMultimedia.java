@@ -3,10 +3,8 @@ package Multimedia;
 import java.util.Arrays;
 
 public class ListaMultimedia {
-	protected int contador;
-	protected Multimedia[] multimedia;
-	
-	//ArrayList<Multimedia> multimediaList = new ArrayList<>(Arrays.asList(multimedia));
+	protected int contador=0;
+	protected Multimedia[] multimedia;	
 
 	public ListaMultimedia(int num) {
 		super();
@@ -49,6 +47,13 @@ public class ListaMultimedia {
 				multimedia[contador] = m;*/
 		}	
 	}//boolean add
+	
+	public Multimedia get(int pos) {
+		if (pos > contador) {
+			System.out.println("ERROR");
+		}
+		return multimedia[pos];
+	}
 
 	@Override
 	public String toString() {
