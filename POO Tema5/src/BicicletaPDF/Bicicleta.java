@@ -1,5 +1,7 @@
 package BicicletaPDF;
 
+//commit prueba para bajar en eclipse
+
 public class Bicicleta extends Vehículo {
 	//para el ej8, muevo este atributo a la superclase Vehiculo y Bicicleta lo hereda.
 	//protected int velocidadActual;
