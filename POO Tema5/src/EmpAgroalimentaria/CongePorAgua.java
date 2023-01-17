@@ -3,8 +3,8 @@ package EmpAgroalimentaria;
 public class CongePorAgua extends ProdCongelado {
 	protected double salinidad;
 
-	public CongePorAgua(String nombre, String fechaCad, String fechaEnva, String paísOrigen, int numLote, double tempManten,
-			double salinidad) {
+	public CongePorAgua(String nombre, String fechaCad, String fechaEnva, String paísOrigen,
+			int numLote, double tempManten, double salinidad) {
 		super(nombre, fechaCad, fechaEnva, paísOrigen, numLote, tempManten);
 		this.salinidad = salinidad;
 	}

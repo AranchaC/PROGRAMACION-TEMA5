@@ -3,8 +3,8 @@ package EmpAgroalimentaria;
 public class CongePorAire extends ProdCongelado {
 	protected int nitro, oxígeno, dióxCarbono, vaporAgua;
 
-	public CongePorAire(String nombre, String fechaCad, String fechaEnva, String paísOrigen, int numLote, double tempManten,
-			int nitro, int oxígeno, int dióxCarbono, int vaporAgua) {
+	public CongePorAire(String nombre, String fechaCad, String fechaEnva, String paísOrigen,
+			int numLote, double tempManten, int nitro, int oxígeno, int dióxCarbono, int vaporAgua) {
 		super(nombre, fechaCad, fechaEnva, paísOrigen, numLote, tempManten);
 		this.nitro = nitro;
 		this.oxígeno = oxígeno;

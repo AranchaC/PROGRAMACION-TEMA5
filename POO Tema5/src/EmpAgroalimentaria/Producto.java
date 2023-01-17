@@ -11,7 +11,7 @@ public class Producto {
 		this.fechaEnva = fechaEnva;
 		this.paísOrigen = paísOrigen;
 		this.numLote = numLote;
-	}
+	}	
 
 	public String getNombre() {
 		return nombre;

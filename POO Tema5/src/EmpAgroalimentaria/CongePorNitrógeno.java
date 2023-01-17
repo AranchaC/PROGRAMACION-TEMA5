@@ -3,8 +3,8 @@ package EmpAgroalimentaria;
 public class CongePorNitrógeno extends ProdCongelado {
 	protected int tiempoExpo;
 
-	public CongePorNitrógeno(String nombre, String fechaCad, String fechaEnva, String paísOrigen, int numLote,
-			double tempManten, int tiempoExpo) {
+	public CongePorNitrógeno(String nombre, String fechaCad, String fechaEnva,
+			String paísOrigen, int numLote, double tempManten, int tiempoExpo) {
 		super(nombre, fechaCad, fechaEnva, paísOrigen, numLote, tempManten);
 		this.tiempoExpo = tiempoExpo;
 	}
