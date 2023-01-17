@@ -50,7 +50,7 @@ public class ListaMultimedia {
 	
 	public Multimedia get(int pos) {
 		if (pos > contador) {
-			System.out.println("ERROR");
+			System.out.println("ERROR");			
 		}
 		return multimedia[pos];
 	}

@@ -9,9 +9,11 @@ public class Película extends Multimedia{
 		super(título, autor, duración, formato);
 		this.actorPrincipal = actorPrincipal;
 		this.actrizPrincipal = actrizPrincipal;
-		if (actorPrincipal == null && actrizPrincipal == null) {
+		
+		/* comento este if, porque he realizado esta función dentro del toString de otra forma:
+		 * if (actorPrincipal == null && actrizPrincipal == null) {
 			System.out.println("ERROR: Escribe al menos uno");			
-		}
+		}*/
 	}
 
 	public String getActorPrincipal() {
@@ -32,15 +34,24 @@ public class Película extends Multimedia{
 	
 	@Override
 	public String toString() {
-		return super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
+		String actores = "";
+		if (actorPrincipal != null) {
+			actores += actorPrincipal;
+			if (actrizPrincipal != null) {
+			actores += " y "+actrizPrincipal;	
+			}
+		}
+		else {
+			if (actrizPrincipal != null) {
+				actores += actrizPrincipal;
+			}
+		}
+		if (actorPrincipal == null && actrizPrincipal == null) {
+			actores = "ERROR: Escribe al menos uno";			
+		}
+		return super.toString()+ " Protagonistas: "+actores+"\n\n";
+			// comento como tenía incialmente el return de toString:
+			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
-	/*if (actrizPrincipal != null) {
-        s += actrizPrincipal;
-        if (actorPrincipal != null) {
-            s += » y » + actorPrincipal;
-        }
-    } else {
-        assert actorPrincipal != null;
-        s += actorPrincipal;
-    }*/
+
 }

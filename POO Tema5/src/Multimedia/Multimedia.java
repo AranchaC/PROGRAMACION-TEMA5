@@ -41,7 +41,7 @@ public class Multimedia {
 	}
 	@Override
 	public String toString() {
-		return "Título= " + título + "\n autor= " + autor + "\n duración= " + duración+"\n Formato= "+formato+"\n" ; 
+		return "Título= " + título + "\n Autor= " + autor + "\n Duración= " + duración+"\n Formato= "+formato+"\n" ; 
 	}
 
 	@Override
@@ -55,7 +55,5 @@ public class Multimedia {
 		Multimedia other = (Multimedia) obj;
 		return Objects.equals(autor, other.autor) && Objects.equals(título, other.título);
 	}	
-	
-	
 	
 }
