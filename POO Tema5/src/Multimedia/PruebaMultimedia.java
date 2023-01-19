@@ -3,7 +3,8 @@ package Multimedia;
 public class PruebaMultimedia {
 
 	public static void main(String[] args) {
-		ListaMultimedia obra = new ListaMultimedia (10);
+		ListaMultimedia obra = new ListaMultimedia (10);//ej4 
+		//ListaMultimedia 
 		
 		obra.add(new Película ("LA LA LAND","DAMIEN CHAZELLE", 180, Formato.DVD, "RYAN GOSLING", "EMMA STONE"));
 		obra.add(new Película ("LIBRO DE LA SELVA","YO MISMA", 90, Formato.AVI, null, null));

@@ -1,6 +1,7 @@
 package Multimedia;
 
 import java.util.Arrays;
+//comentario prueba guardado
 
 public class ListaMultimedia {
 	protected int contador=0;
@@ -11,7 +12,7 @@ public class ListaMultimedia {
 		multimedia = new Multimedia[num];
 	}	
 	
-	/*public int getContador() {
+	public int getContador() {
 		return contador;
 	}
 
@@ -25,15 +26,19 @@ public class ListaMultimedia {
 
 	public void setMultimedia(Multimedia[] multimedia) {
 		this.multimedia = multimedia;
+	}	
+	
+	public int size() {		
+		return contador;
 	}
 	
 	public Multimedia get(int pos) {
+		if (pos > multimedia.length) {
+			System.out.println("ERROR");			
+		}
 		return multimedia[pos];
-	}*/
-	
-	public int size() {		
-		return multimedia.length;
 	}
+
 	public boolean add(Multimedia m) {		
 		if (contador == multimedia.length) {
 			return false;
@@ -48,13 +53,6 @@ public class ListaMultimedia {
 		}	
 	}//boolean add
 	
-	public Multimedia get(int pos) {
-		if (pos > contador) {
-			System.out.println("ERROR");			
-		}
-		return multimedia[pos];
-	}
-
 	@Override
 	public String toString() {
 		return  Arrays.toString(multimedia);

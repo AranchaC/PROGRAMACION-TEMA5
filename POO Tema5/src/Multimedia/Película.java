@@ -31,7 +31,7 @@ public class Película extends Multimedia{
 	public void setActrizPrincipal(String actrizPrincipal) {
 		this.actrizPrincipal = actrizPrincipal;
 	}
-	
+
 	@Override
 	public String toString() {
 		String actores = "";
@@ -50,7 +50,7 @@ public class Película extends Multimedia{
 			actores = "ERROR: Escribe al menos uno";			
 		}
 		return super.toString()+ " Protagonistas: "+actores+"\n\n";
-			// comento como tenía incialmente el return de toString:
+			// comento como tenía incialmente el return de toString, antes de poner los ifs:
 			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
 
