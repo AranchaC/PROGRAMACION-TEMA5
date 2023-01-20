@@ -1,6 +1,6 @@
 package Multimedia;
 
-public class Película extends Multimedia{
+public class Película extends Multimedia implements Comparable<Película>{
 	protected String actorPrincipal, actrizPrincipal;
 
 
@@ -53,5 +53,11 @@ public class Película extends Multimedia{
 			// comento como tenía incialmente el return de toString, antes de poner los ifs:
 			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
+
+	*/@Override
+	public int compareTo(Película o) {
+		this.Pe
+		return 0;
+	}*/
 
 }

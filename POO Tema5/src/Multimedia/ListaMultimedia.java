@@ -1,6 +1,7 @@
 package Multimedia;
 
 import java.util.Arrays;
+import java.util.Objects;
 //comentario prueba guardado
 
 public class ListaMultimedia {
@@ -52,6 +53,10 @@ public class ListaMultimedia {
 				multimedia[contador] = m;*/
 		}	
 	}//boolean add
+	
+	public void sort() {
+		Arrays.sort(multimedia);
+	}
 	
 	@Override
 	public String toString() {
