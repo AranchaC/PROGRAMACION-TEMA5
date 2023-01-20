@@ -54,10 +54,10 @@ public class Película extends Multimedia implements Comparable<Película>{
 			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
 
-	*/@Override
+	@Override
 	public int compareTo(Película o) {
-		this.Pe
+		this.Película == o;
 		return 0;
-	}*/
+	}
 
 }
