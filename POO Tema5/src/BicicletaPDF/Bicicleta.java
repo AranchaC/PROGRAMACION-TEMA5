@@ -15,6 +15,11 @@ public class Bicicleta extends Vehículo {
 		this.platoActual = platoActual;
 		this.piñonActual = piñonActual;
 	}
+	
+	public int metodoRuben() {
+		return 0;
+	}
+	
 	public int getPlatoActual() {
 		return platoActual;
 	}
