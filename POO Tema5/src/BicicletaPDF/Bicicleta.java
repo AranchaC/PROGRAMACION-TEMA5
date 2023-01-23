@@ -16,14 +16,6 @@ public class Bicicleta extends Vehículo {
 		this.piñonActual = piñonActual;
 	}
 	
-
-	public int metodoArancha1() {
-		return 0;
-	}
-	public int metodoRuben() {
-		return 0;
-	}
-	
 	public int getPlatoActual() {
 		return platoActual;
 	}
