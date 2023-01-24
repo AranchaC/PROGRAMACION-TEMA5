@@ -1,7 +1,5 @@
 package Multimedia;
 
-import java.util.Arrays;
-
 public class PruebaMultimedia {
 
 	public static void main(String[] args) {

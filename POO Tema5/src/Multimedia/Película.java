@@ -48,7 +48,6 @@ public class Película extends Multimedia implements Comparable<Película>{
 			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
 
-
 	@Override
 	public int compareTo(Película o) {
 		return (int) (this.duración - o.getDuración());
