@@ -6,16 +6,16 @@ public class PruebaMultimedia {
 		ListaMultimedia obras = new ListaMultimedia (10);//ej4 
 		//ListaMultimedia 
 		
-		obras.add(new Película ("LA LA LAND","DAMIEN CHAZELLE", 128, Formato.DVD, "RYAN GOSLING", "EMMA STONE"));
-		obras.add(new Película ("LIBRO DE LA SELVA","YO MISMA", 105, Formato.AVI, null, null));
-		obras.add(new Película ("TITANIC","JAMES CAMERON", 195, Formato.MP3, "LEO DI CAPRIO","KATE WINSLET"));
-		obras.add(new Película ("VIUDA NEGRA","MARVEL", 132, Formato.MOV, null, "SCARLETT JOHANSSON"));
-		obras.add(new Película ("IRON MAN","MARVEL", 126, Formato.MPG, "ROBERT DOWNEY JR", null));		
-		obras.add(new Película ("HARRY POTTER 3","ALFONSO CUARÓN", 141, Formato.DVD, "DANIEL RADCLIFFE", null));
-		obras.add(new Película ("PIRATAS DEL CARIBE","GORE VERBINSKI", 143, Formato.AVI, "JOHNNY DEPP", "ORLANDO BLOOM"));
-		obras.add(new Película ("GREEN BOOK","PETER FARRELLY", 130, Formato.MPG, "VIGGO MORTENSEN", "MAHERSHALA ALI"));
-		obras.add(new Película ("CRIADAS Y SEÑORAS","TATE TAYLOR", 146, Formato.MP3, "VIOLA DAVIS", "EMMA STONE"));
-		obras.add(new Película ("ENOLA HOLMES","NETFLIX", 123, Formato.MOV, null, "MILLIE BOBBY BROWN"));
+		obras.add(new Película ("LA LA LAND","Damien Chazelle", 2.8, Formato.DVD, "RYAN GOSLING", "EMMA STONE"));
+		obras.add(new Película ("LIBRO DE LA SELVA","Disney", 1.29, Formato.AVI, null, null));
+		obras.add(new Película ("TITANIC","James Cameron", 3.30, Formato.MP3, "LEO DI CAPRIO","KATE WINSLET"));
+		obras.add(new Película ("VIUDA NEGRA","Marvel", 2.13, Formato.MOV, null, "SCARLETT JOHANSSON"));
+		obras.add(new Película ("IRON MAN","Marvel", 2.6, Formato.MPG, "ROBERT DOWNEY JR", null));		
+		obras.add(new Película ("HARRY POTTER 3","Alfonso Cuarón", 2.19, Formato.DVD, "DANIEL RADCLIFFE", null));
+		obras.add(new Película ("PIRATAS DEL CARIBE","Gore Verbinski", 2.23, Formato.AVI, "JOHNNY DEPP", "ORLANDO BLOOM"));
+		obras.add(new Película ("GREEN BOOK","Peter Farrelly", 2.10, Formato.MPG, "VIGGO MORTENSEN", "MAHERSHALA ALI"));
+		obras.add(new Película ("CRIADAS Y SEÑORAS","Tate Taylor", 2.26, Formato.MP3, "VIOLA DAVIS", "EMMA STONE"));
+		obras.add(new Película ("ENOLA HOLMES","Netflix", 2.3, Formato.MOV, null, "MILLIE BOBBY BROWN"));
 		
 		//System.out.println(obras.toString());
 		obras.sort();

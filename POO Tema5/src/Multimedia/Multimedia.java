@@ -41,7 +41,7 @@ public class Multimedia {
 	}
 	@Override
 	public String toString() {
-		return "Título= " + título + "\n Autor= " + autor + "\n Duración= " + duración+"\n Formato= "+formato+"\n" ; 
+		return "Título= " + título + "\n Autor= " + autor + "\n Duración= " + duración+" \n Formato= "+formato+"\n" ; 
 	}
 
 	@Override

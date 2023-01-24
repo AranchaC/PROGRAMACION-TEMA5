@@ -44,25 +44,19 @@ public class Película extends Multimedia implements Comparable<Película>{
 			actores = "ERROR: Escribe al menos uno";			
 		}
 		return super.toString()+ " Protagonistas: "+actores+"\n\n";
-			// comento como tenía incialmente el return de toString, antes de poner los ifs:
-			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
 
 	@Override
 	public int compareTo(Película o) {
-		return (int) (this.duración - o.getDuración());
-		
-		/*int resultado = 0;
-		if ((int)this.duración<o.duración) {
-			resultado = 0;
-		}//if
-		else {
-			if((int)this.duración>o.duración) {
-				resultado = 1;
-			}//if
-		}//else
-		return resultado;*/
-	}//compareTo
-
-
+		if (this.duración < o.getDuración()) {
+			return -1;
+		}
+		return 0;
+			
+		}
+		//return (int) ((this.duración*1000) - (o.duración*1000));
 }
+
+
+
+
