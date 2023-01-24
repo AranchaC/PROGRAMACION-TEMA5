@@ -3,17 +3,11 @@ package Multimedia;
 public class Película extends Multimedia implements Comparable<Película>{
 	protected String actorPrincipal, actrizPrincipal;
 
-
 	public Película(String título, String autor, double duración, Formato formato, String actorPrincipal,
 			String actrizPrincipal) {
 		super(título, autor, duración, formato);
 		this.actorPrincipal = actorPrincipal;
 		this.actrizPrincipal = actrizPrincipal;
-		
-		/* comento este if, porque he realizado esta función dentro del toString de otra forma:
-		 * if (actorPrincipal == null && actrizPrincipal == null) {
-			System.out.println("ERROR: Escribe al menos uno");			
-		}*/
 	}
 
 	public String getActorPrincipal() {
@@ -54,10 +48,22 @@ public class Película extends Multimedia implements Comparable<Película>{
 			//super.toString()+" Actor Principal= " + actorPrincipal + "\n Actriz Principal= " + actrizPrincipal+"\n \n";
 	}
 
+
 	@Override
 	public int compareTo(Película o) {
-		this.Película == o;
-		return 0;
-	}
+		return (int) (this.duración - o.getDuración());
+		
+		/*int resultado = 0;
+		if ((int)this.duración<o.duración) {
+			resultado = 0;
+		}//if
+		else {
+			if((int)this.duración>o.duración) {
+				resultado = 1;
+			}//if
+		}//else
+		return resultado;*/
+	}//compareTo
+
 
 }
