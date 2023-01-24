@@ -1,8 +1,6 @@
 package Multimedia;
 
 import java.util.Arrays;
-import java.util.Objects;
-//comentario prueba guardado
 
 public class ListaMultimedia {
 	protected int contador=0;

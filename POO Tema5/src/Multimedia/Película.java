@@ -48,13 +48,16 @@ public class Película extends Multimedia implements Comparable<Película>{
 
 	@Override
 	public int compareTo(Película o) {
+		if (this.autor != o.getAutor()) {
+			return this.autor.compareToIgnoreCase(o.getAutor());
+		}
 		if (this.duración < o.getDuración()) {
 			return -1;
 		}
 		else if (this.duración > o.getDuración()) {
 			return 1;
 		}
-		return 0;			
+		return 0;		
 	}
 	//compareToIgnoreCase
 		//return (int) ((this.duración*1000) - (o.duración*1000));
