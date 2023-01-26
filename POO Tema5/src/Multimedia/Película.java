@@ -53,13 +53,14 @@ public class Película extends Multimedia implements Comparable<Película>{
 		}
 		if (this.duración < o.getDuración()) {
 			return -1;
-		}
+		}//if
 		else if (this.duración > o.getDuración()) {
 			return 1;
-		}
+		}//else
 		return 0;		
 	}
-	//compareToIgnoreCase
+	
+
 		//return (int) ((this.duración*1000) - (o.duración*1000));
 }
 
