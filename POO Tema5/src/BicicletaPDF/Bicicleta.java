@@ -2,7 +2,7 @@ package BicicletaPDF;
 
 //commit prueba para bajar en eclipse
 
-public class Bicicleta extends Vehículo {
+public class Bicicleta extends Vehículo implements Imprimible {
 	//para el ej8, muevo este atributo a la superclase Vehiculo y Bicicleta lo hereda.
 	//protected int velocidadActual;
 	protected int platoActual;
@@ -69,6 +69,12 @@ public class Bicicleta extends Vehículo {
 	public String toString() {
 		return "Bicicleta [velocidadActual=" + velocidadActual + ", platoActual=" + platoActual + ", piñonActual="
 				+ piñonActual + "]";
+	}
+
+	@Override
+	public void imprime() {
+		System.out.println(this.toString());
+		
 	}
 
 }

@@ -21,5 +21,11 @@ public class PruebaBicicleta {
 			System.out.println(b.acelerar());
 		}
 		
+		bici1.imprime();
+		/*for (Bicicleta b : bicisVarias) {
+			b.imprime();
+		}*/
+		
+		
 	}//main
 }//class
