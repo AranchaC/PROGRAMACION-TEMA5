@@ -1,6 +1,6 @@
 package BicicletaPDF;
 
-public interface Imprimible {
+public interface Imprimible extends Definir {
 	public void imprime();
 
 }

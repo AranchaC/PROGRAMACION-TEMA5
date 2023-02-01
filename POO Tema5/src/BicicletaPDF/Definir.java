@@ -2,8 +2,6 @@ package BicicletaPDF;
 
 public interface Definir {
 	
-	public static void getAtributos() {
-		 
-	}
+	public String getAtributos();
 
 }

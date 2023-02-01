@@ -21,6 +21,12 @@ public class PruebaMultimedia {
 		//System.out.println(obras.toString());
 		obras.sort();
 		System.out.println(obras);
+				
+		//posicion 0 con 1
+		for ( int i=0; i<obras.getMultimedia().length-1; i++) {
+			//obras.get(i).equals(obras.get(i+1));
+			System.out.println(obras.get(i).equals(obras.get(i+1)));
+		}
 
 
 	}
