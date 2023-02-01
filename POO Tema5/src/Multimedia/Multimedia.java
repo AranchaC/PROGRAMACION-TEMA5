@@ -112,7 +112,7 @@ public class Multimedia {
 		if (getClass() != obj.getClass())
 			return false;*/
 		Multimedia other = (Multimedia) obj;
-		return Objects.equals(autor, other.autor) || Objects.equals(título, other.título);
+		return Objects.equals(autor, other.autor);
 	}	
 	
 }
