@@ -27,8 +27,16 @@ public class PruebaMultimedia {
 			//obras.get(i).equals(obras.get(i+1));
 			System.out.println(obras.get(i).equals(obras.get(i+1)));
 		}
+		
+		ListaMultimedia discos = new ListaMultimedia (20);
+		
+		discos.add(new Disco ("QUEEN","QUEEN", 38.39, Formato.MP3, Género.ROCK));
+		discos.add(new Disco("BON JOVI GREATEST HITS", "BON JOVI", 55.15, Formato.CDAUDIO, Género.ROCK));
+		discos.add(new Disco ("APPETITE FOR DESTRUCTION", "GUNS N ROSES", 53.55, Formato.AVI, Género.ROCK));
 
-
+		System.out.println(discos.toString());
+		
+		Disco miDisco = new Disco("QUEEN", "QUEEN", 0, null, null);
 	}
 
 }
