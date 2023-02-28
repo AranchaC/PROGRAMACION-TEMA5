@@ -3,7 +3,7 @@ package Animales;
 public class PruebaAnimales {
 	
 	public static void main(String[] args) {
-		Animal[] arca = new Animal[10];
+		Animal[] arca = new Animal[3];
 		Volador[] voladores = new Volador[4];
 		
 		arca[0] = new Perro (4321, "Pitbull");
@@ -14,12 +14,14 @@ public class PruebaAnimales {
 		voladores[1] = new Murciélago(670);
 		
 		for (Animal a : arca) {
+			if (a==null) break;
 			System.out.println(a);
 		}
 		
 		for (Volador v : voladores) {
 			if (v==null) break;
 			v.volar();
+			System.out.println(v);
 		}
 	}
 

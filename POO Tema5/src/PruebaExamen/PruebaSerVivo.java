@@ -3,7 +3,7 @@ package PruebaExamen;
 public class PruebaSerVivo {
 
 	public static void main(String[] args) {
-		GrupoPorEdad vivos = new GrupoPorEdad(8);
+		GrupoPorEdad vivos = new GrupoPorEdad(10);
 		
 		vivos.add(new SerVivo(4));
 		vivos.add(new SerVivo(10));

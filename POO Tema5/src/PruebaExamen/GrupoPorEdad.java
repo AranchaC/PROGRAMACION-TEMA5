@@ -1,7 +1,5 @@
 package PruebaExamen;
 
-import java.util.Arrays;
-
 public class GrupoPorEdad {
 	private SerVivo[] seres;
 	public int size;
