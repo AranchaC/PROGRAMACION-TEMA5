@@ -20,7 +20,7 @@ class SerVivo {
 
 	@Override
 	public String toString() {
-		return "SerVivo y edad=" + edad + "\n";
+		return "SerVivo y edad: " + edad + "\n";
 	}
 	
 	

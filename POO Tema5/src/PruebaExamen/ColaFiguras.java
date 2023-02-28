@@ -15,35 +15,35 @@ public class ColaFiguras {
 	
 	public boolean add(Object obj) {
 		if (isFull()) return false;
-		figuras[size] = obj;
+		/*figuras[size] = obj;
 		size++;
-		return true;
+		return true;*/
 		
-		/*<<add cola circular>>
+		//<<add con cola circular>>
 		figuras[tail] = obj;
 		size++;
 		tail++;
 		if (tail == figuras.length)	tail=0;
-		return true;*/
+		return true;
 	}//add
 	
 	public Object remove() {
 		if (isEmpty())return null;
-		Object res = figuras[head];
+		/*Object res = figuras[head];
 		for(int i=1; i<size; i++) {
 			figuras[i-1]=figuras[i];
 		}
 		figuras[size-1]= null;
 		size--;
-		return res;
+		return res;*/
 		
-		/*<<remove cola circular>>
+		//<<remove con cola circular>>
 		Object res = figuras[head];
 		figuras[head] = null;
 		head++;
 		size--;
 		if (head == figuras.length) head=0;
-		return res;*/
+		return res;
 	}
 	
 	boolean isEmpty() {

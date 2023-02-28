@@ -10,7 +10,7 @@ public class Alumno extends Persona {
 
 	@Override
 	public String toString() {
-		return "Alumno y edad: "+edad+" y nia=" + nia + "\n";
+		return "Alumno y edad: "+edad+" y nia: " + nia + "\n";
 	}
 	
 	
