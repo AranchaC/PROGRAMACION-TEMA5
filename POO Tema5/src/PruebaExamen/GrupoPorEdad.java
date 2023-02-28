@@ -10,15 +10,15 @@ public class GrupoPorEdad {
 		seres=new SerVivo[max];
 		size = 0;
 	}
+	
+	public boolean isFull() {
+		return size==seres.length;
+	}
 	public boolean add(SerVivo m) {
-		if (size >= seres.length) {
-			return false;
-		}
-		else {
-			seres[size] = m;
-			size++;
-			return true;
-		}		
+		if (isFull()) return false;
+		seres[size] = m;
+		size++;
+		return true;			
 	}
 	
 	/*
@@ -65,24 +65,18 @@ public class GrupoPorEdad {
 	public void insertaEnOrden(SerVivo ser) {
 		for (int i=0; i<seres.length; i++) {
 			if (seres[i]!= null) {
-				//seres[i] = seres[i+1];
 				if (ser.edad < seres[i].edad) {
 					//aquí ya tengo la posicion i.
-					if (i >=0 && i<seres.length) {
-						for ( int cursor=size; cursor>i; cursor--) {
-							seres[cursor] = seres[cursor-1];	
-						}
-					
-						//seres[i] = seres[i+1];
-						seres[i] = ser;
-						size++;
-					}
-
+					//muevo los elementos de i a i+1,
+					//y asigno ser a i.
+					seres[i+1]=seres[i];
+					seres[i] = ser;
+					size++;
 				}
-			}
-		}
-		
-	}
+			}//if
+		}//for		
+	}//insertarEnOrden
+	
 	
 	/*		for  ( int cursor=numElementos; cursor>index; cursor--) {
 			lista[cursor] = lista[cursor-1];

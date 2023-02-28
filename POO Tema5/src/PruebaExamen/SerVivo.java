@@ -6,6 +6,17 @@ class SerVivo {
 	public SerVivo(int edad) {
 		this.edad = edad;
 	}
+	
+
+	public int getEdad() {
+		return edad;
+	}
+
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
 
 	@Override
 	public String toString() {
